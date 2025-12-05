@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@google/genai": "^0.2.1",
+    "@google/genai": "*",
     "@react-three/drei": "^9.102.0",
     "@react-three/fiber": "^8.15.19",
     "react": "^18.2.0",
@@ -20,6 +20,7 @@
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "@types/three": "^0.160.0",
+    "@types/node": "^20.11.24",
     "@vitejs/plugin-react": "^4.2.1",
     "typescript": "^5.2.2",
     "vite": "^5.1.6"
