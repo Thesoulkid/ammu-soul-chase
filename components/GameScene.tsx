@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Text, Stars, PerspectiveCamera, ContactShadows, Environment } from '@react-three/drei';
+import { Text, Stars, PerspectiveCamera, ContactShadows } from '@react-three/drei';
 import * as THREE from 'three';
 import { GameState, Lane, GameObject, ObstacleType } from '../types';
 
@@ -44,6 +44,12 @@ const TREE_TRUNK = "#3f2c22";
 
 // --- AUDIO SYSTEM ---
 const audioCtx = typeof window !== 'undefined' ? new (window.AudioContext || (window as any).webkitAudioContext)() : null;
+
+export const resumeAudio = () => {
+    if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+};
 
 const playSound = (type: 'step' | 'heart' | 'hit' | 'move') => {
     if (!audioCtx) return;
