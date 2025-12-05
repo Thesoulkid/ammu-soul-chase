@@ -2,7 +2,7 @@ export type Lane = -1 | 0 | 1;
 
 export enum ObstacleType {
   FAMILY = 'Family Problems',
-  BESTIE = 'Toxic Bestie',
+  BESTIE = 'Toxic Myran',
   SOCIETY = 'Society',
   EGO = 'Ego',
   DISTANCE = 'Long Distance'
