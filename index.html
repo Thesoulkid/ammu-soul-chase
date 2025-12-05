@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Ammu & Soul: The Chase</title>
-    <!-- We keep Tailwind CDN for simplicity in this specific setup, 
-         though typically it would be installed via npm in a full build -->
+    <!-- Tailwind CSS (CDN is fine for simple usage, or use PostCSS in production) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
@@ -20,6 +19,7 @@
         background-color: #0f172a;
       }
       #root { width: 100%; height: 100%; }
+      canvas { touch-action: none; }
     </style>
   <script type="importmap">
 {
@@ -36,7 +36,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>
