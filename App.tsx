@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import GameScene from './components/GameScene';
+import GameScene, { resumeAudio } from './components/GameScene';
 import { GameState } from './types';
 import { getGameSummary } from './services/geminiService';
 
@@ -17,6 +17,7 @@ const App: React.FC = () => {
   const [loadingSummary, setLoadingSummary] = useState(false);
 
   const startGame = () => {
+    resumeAudio();
     setGameState({
       isPlaying: true,
       isGameOver: false,
