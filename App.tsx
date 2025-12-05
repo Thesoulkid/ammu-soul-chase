@@ -96,7 +96,7 @@ const App: React.FC = () => {
               {loadingSummary ? (
                 <div className="flex flex-col items-center gap-2">
                   <div className="w-6 h-6 border-2 border-pink-500 border-t-transparent rounded-full animate-spin"></div>
-                  <span className="text-gray-400 text-sm">Asking Relationship Counselor AI...</span>
+                  <span className="text-gray-400 text-sm">Loading Result...</span>
                 </div>
               ) : (
                 <p className="text-pink-100 italic text-center text-lg leading-relaxed">
