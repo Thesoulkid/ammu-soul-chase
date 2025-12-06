@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@google/genai": "*",
+    "@google/genai": "latest",
     "@react-three/drei": "^9.102.0",
     "@react-three/fiber": "^8.15.19",
     "react": "^18.2.0",
